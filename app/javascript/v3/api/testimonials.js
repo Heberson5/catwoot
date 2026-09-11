@@ -1,6 +1,4 @@
-import wootConstants from 'dashboard/constants/globals';
-import wootAPI from './apiClient';
-
+// Outbound fetch of Chatwoot's own marketing testimonials has been disabled for this self-hosted fork.
 export const getTestimonialContent = () => {
-  return wootAPI.get(wootConstants.TESTIMONIAL_URL);
+  return Promise.resolve({ data: [] });
 };
