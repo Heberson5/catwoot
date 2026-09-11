@@ -10,7 +10,13 @@
     "BETA_DESCRIPTION": "This feature is in beta and may change as we improve it.",
     "ACCEPT": "Accept",
     "DISCARD": "Discard",
-    "PREFERRED": "Preferred"
+    "PREFERRED": "Preferred",
+    "INSTALL_APP": {
+      "MESSAGE_MOBILE": "Install this app for a faster, full-screen experience with notifications.",
+      "MESSAGE_DESKTOP": "Install the desktop app to keep it one click away and get notifications.",
+      "IOS_INSTRUCTIONS": "To install: tap Share, then \"Add to Home Screen\".",
+      "ACTION": "Install app"
+    }
   },
   "CHOICE_TOGGLE": {
     "YES": "Yes",

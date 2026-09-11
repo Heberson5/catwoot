@@ -10,7 +10,13 @@
     "BETA_DESCRIPTION": "Este recurso está em fase BETA e deve sofre alterações assim que Nós melhorarmos ele.",
     "ACCEPT": "Aceitar",
     "DISCARD": "Descartar",
-    "PREFERRED": "Preferido"
+    "PREFERRED": "Preferido",
+    "INSTALL_APP": {
+      "MESSAGE_MOBILE": "Instale este aplicativo para uma experiência mais rápida, em tela cheia e com notificações.",
+      "MESSAGE_DESKTOP": "Instale o aplicativo de computador para tê-lo a um clique de distância e receber notificações.",
+      "IOS_INSTRUCTIONS": "Para instalar: toque em Compartilhar e depois em \"Adicionar à Tela de Início\".",
+      "ACTION": "Instalar aplicativo"
+    }
   },
   "CHOICE_TOGGLE": {
     "YES": "Sim",
