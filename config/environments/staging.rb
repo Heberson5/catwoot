@@ -53,8 +53,8 @@ Rails.application.configure do
   Rails.application.routes.default_url_options = { host: ENV['FRONTEND_URL'] }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
-  # the I18n.default_locale when a translation cannot be found).
-  config.i18n.fallbacks = [I18n.default_locale]
+  # the I18n.default_locale, and finally to English, when a translation cannot be found).
+  config.i18n.fallbacks = [I18n.default_locale, :en]
   config.active_job.queue_adapter = :sidekiq
 
   # Send deprecation notices to registered listeners.

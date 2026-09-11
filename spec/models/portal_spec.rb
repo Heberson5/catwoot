@@ -20,10 +20,10 @@ RSpec.describe Portal do
     let!(:portal) { create(:portal, account_id: account.id) }
 
     context 'when set portal config' do
-      it 'Adds default allowed_locales en' do
+      it 'Adds default allowed_locales pt_BR' do
         expect(portal.config).to be_present
-        expect(portal.config['allowed_locales']).to eq(['en'])
-        expect(portal.config['default_locale']).to eq('en')
+        expect(portal.config['allowed_locales']).to eq(['pt_BR'])
+        expect(portal.config['default_locale']).to eq('pt_BR')
         expect(portal.config['draft_locales']).to eq([])
       end
 

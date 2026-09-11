@@ -10,7 +10,7 @@
 #  feature_flags_ext_1   :bigint           default(0), not null
 #  internal_attributes   :jsonb            not null
 #  limits                :jsonb
-#  locale                :integer          default("en")
+#  locale                :integer          default("pt_BR")
 #  name                  :string           not null
 #  settings              :jsonb
 #  status                :integer          default("active")

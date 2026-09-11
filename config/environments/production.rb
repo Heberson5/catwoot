@@ -60,8 +60,8 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "Chatwoot_#{Rails.env}"
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
-  # the I18n.default_locale when a translation cannot be found).
-  config.i18n.fallbacks = [I18n.default_locale]
+  # the I18n.default_locale, and finally to English, when a translation cannot be found).
+  config.i18n.fallbacks = [I18n.default_locale, :en]
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify

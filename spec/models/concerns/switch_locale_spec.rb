@@ -25,7 +25,7 @@ RSpec.describe 'SwitchLocale Concern', type: :controller do
 
       it 'falls back to default locale if invalid' do
         get :index, params: { locale: 'invalid' }
-        expect(response.body).to eq('en')
+        expect(response.body).to eq('pt_BR')
       end
     end
 
@@ -74,7 +74,7 @@ RSpec.describe 'SwitchLocale Concern', type: :controller do
       it 'falls back to default locale if env locale invalid' do
         with_modified_env(DEFAULT_LOCALE: 'invalid') do
           get :index
-          expect(response.body).to eq('en')
+          expect(response.body).to eq('pt_BR')
         end
       end
     end

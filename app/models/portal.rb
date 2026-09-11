@@ -96,14 +96,14 @@ class Portal < ApplicationRecord
   end
 
   def default_locale
-    config_value('default_locale').presence || allowed_locale_codes.first || 'en'
+    config_value('default_locale').presence || allowed_locale_codes.first || I18n.default_locale.to_s
   end
 
   def allowed_locale_codes
     allowed_locale_codes = normalize_locale_codes(config_value('allowed_locales'))
     return allowed_locale_codes if allowed_locale_codes.present?
 
-    [config_value('default_locale').presence || 'en']
+    [config_value('default_locale').presence || I18n.default_locale.to_s]
   end
 
   def draft_locale_codes
