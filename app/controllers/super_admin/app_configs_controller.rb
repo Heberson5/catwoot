@@ -87,10 +87,10 @@ class SuperAdmin::AppConfigsController < SuperAdmin::ApplicationController
   end
 
   def success_notice
-    message = "#{@config.titleize} settings updated successfully"
+    message = "Configurações de #{@config.titleize} atualizadas com sucesso"
     return message unless restart_required_config_saved?
 
-    "#{message.delete_suffix('.')}. Restart Chatwoot web and worker processes to apply this change everywhere."
+    "#{message.delete_suffix('.')}. Reinicie os processos web e worker do Chatwoot para aplicar esta alteração em todo o sistema."
   end
 
   def success_flash

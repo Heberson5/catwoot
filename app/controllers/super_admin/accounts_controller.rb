@@ -55,14 +55,14 @@ class SuperAdmin::AccountsController < SuperAdmin::ApplicationController
   def seed
     Internal::SeedAccountJob.perform_later(requested_resource)
     # rubocop:disable Rails/I18nLocaleTexts
-    redirect_back(fallback_location: [namespace, requested_resource], notice: 'Account seeding triggered')
+    redirect_back(fallback_location: [namespace, requested_resource], notice: 'Geração de dados de exemplo da conta iniciada')
     # rubocop:enable Rails/I18nLocaleTexts
   end
 
   def reset_cache
     requested_resource.reset_cache_keys
     # rubocop:disable Rails/I18nLocaleTexts
-    redirect_back(fallback_location: [namespace, requested_resource], notice: 'Cache keys cleared')
+    redirect_back(fallback_location: [namespace, requested_resource], notice: 'Chaves de cache limpas')
     # rubocop:enable Rails/I18nLocaleTexts
   end
 
@@ -71,7 +71,7 @@ class SuperAdmin::AccountsController < SuperAdmin::ApplicationController
 
     DeleteObjectJob.perform_later(account) if account.present?
     # rubocop:disable Rails/I18nLocaleTexts
-    redirect_back(fallback_location: [namespace, requested_resource], notice: 'Account deletion is in progress.')
+    redirect_back(fallback_location: [namespace, requested_resource], notice: 'A exclusão da conta está em andamento.')
     # rubocop:enable Rails/I18nLocaleTexts
   end
 
