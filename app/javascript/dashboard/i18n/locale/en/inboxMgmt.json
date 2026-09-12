@@ -502,6 +502,27 @@
           "ERROR_MESSAGE": "We were not able to save the api channel"
         }
       },
+      "WHATSAPP_QR": {
+        "TITLE": "WhatsApp (QR Code)",
+        "DESC": "Connect a WhatsApp number by scanning a QR code with the WhatsApp app on your phone, similar to WhatsApp Web. No Meta Business account or API approval needed.",
+        "CHANNEL_NAME": {
+          "LABEL": "Inbox Name",
+          "PLACEHOLDER": "Eg: WhatsApp Support",
+          "ERROR": "This field is required"
+        },
+        "SUBMIT_BUTTON": "Create Inbox",
+        "ERROR_MESSAGE": "We were not able to create the WhatsApp (QR Code) inbox",
+        "LINKING": {
+          "TITLE": "Connecting your WhatsApp number",
+          "WAITING": "Preparing your QR code...",
+          "SCAN_INSTRUCTIONS": "Open WhatsApp on your phone, go to Settings > Linked Devices > Link a Device, and scan this QR code.",
+          "REFRESH_HINT": "The QR code refreshes automatically if it expires.",
+          "CONNECTED_TITLE": "WhatsApp connected!",
+          "CONNECTED_SUBTITLE": "Connected as {phoneNumber}",
+          "CONTINUE_BUTTON": "Continue",
+          "UNREACHABLE": "Could not reach the WhatsApp (QR Code) service. Make sure it is deployed and WHATSAPP_QR_SERVICE_URL/WHATSAPP_QR_SERVICE_KEY are configured."
+        }
+      },
       "EMAIL_CHANNEL": {
         "TITLE": "Email Channel",
         "DESC": "Integrate your email inbox.",
@@ -588,6 +609,10 @@
           "WHATSAPP_CALL": {
             "TITLE": "WhatsApp Call",
             "DESCRIPTION": "Take voice calls on your WhatsApp number"
+          },
+          "WHATSAPP_QR": {
+            "TITLE": "WhatsApp (QR Code)",
+            "DESCRIPTION": "Connect a WhatsApp number by scanning a QR code, no Meta Business account needed"
           },
           "EMAIL": {
             "TITLE": "Email",

@@ -56,7 +56,26 @@ services:
     volumes:
       - redis_data:/data
 
+  # Optional: standalone WhatsApp bridge (QR code / multi-device, via
+  # Baileys) used by the "WhatsApp (QR Code)" inbox channel. Not exposed
+  # to the host - only "rails"/"sidekiq" talk to it, over the internal
+  # Docker network, using WHATSAPP_QR_SERVICE_URL/WHATSAPP_QR_SERVICE_KEY
+  # from .env. Safe to leave running unconfigured if that channel isn't used.
+  whatsapp_qr:
+    build:
+      context: ./services/whatsapp-qr
+    depends_on:
+      - rails
+    env_file: .env
+    environment:
+      - CHATWOOT_BASE_URL=http://rails:3000
+      - API_KEY=${WHATSAPP_QR_SERVICE_KEY}
+    volumes:
+      - whatsapp_qr_auth:/app/auth
+    restart: always
+
 volumes:
   storage_data:
   postgres_data:
   redis_data:
+  whatsapp_qr_auth:

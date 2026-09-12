@@ -402,6 +402,27 @@
           "ERROR_MESSAGE": "Não foi possível salvar o canal de API"
         }
       },
+      "WHATSAPP_QR": {
+        "TITLE": "WhatsApp (QR Code)",
+        "DESC": "Conecte um número de WhatsApp escaneando um QR Code com o aplicativo do WhatsApp no seu celular, como no WhatsApp Web. Não precisa de conta Meta Business nem aprovação de API.",
+        "CHANNEL_NAME": {
+          "LABEL": "Nome da Caixa de Entrada",
+          "PLACEHOLDER": "Ex: Atendimento WhatsApp",
+          "ERROR": "Este campo é obrigatório"
+        },
+        "SUBMIT_BUTTON": "Criar Caixa de Entrada",
+        "ERROR_MESSAGE": "Não foi possível criar a caixa de entrada do WhatsApp (QR Code)",
+        "LINKING": {
+          "TITLE": "Conectando seu número de WhatsApp",
+          "WAITING": "Preparando seu QR Code...",
+          "SCAN_INSTRUCTIONS": "Abra o WhatsApp no seu celular, vá em Configurações > Aparelhos conectados > Conectar um aparelho, e escaneie este QR Code.",
+          "REFRESH_HINT": "O QR Code é atualizado automaticamente quando expira.",
+          "CONNECTED_TITLE": "WhatsApp conectado!",
+          "CONNECTED_SUBTITLE": "Conectado como {phoneNumber}",
+          "CONTINUE_BUTTON": "Continuar",
+          "UNREACHABLE": "Não foi possível conectar ao serviço do WhatsApp (QR Code). Verifique se ele está publicado e se WHATSAPP_QR_SERVICE_URL/WHATSAPP_QR_SERVICE_KEY estão configurados."
+        }
+      },
       "EMAIL_CHANNEL": {
         "TITLE": "Canal de e-mail",
         "DESC": "Integre sua caixa de entrada de e-mail.",
@@ -488,6 +509,10 @@
           "WHATSAPP_CALL": {
             "TITLE": "Chamada do WhatsApp",
             "DESCRIPTION": "Receba chamadas de voz no seu número do WhatsApp"
+          },
+          "WHATSAPP_QR": {
+            "TITLE": "WhatsApp (QR Code)",
+            "DESCRIPTION": "Conecte um número de WhatsApp escaneando um QR Code, sem precisar de conta Meta Business"
           },
           "EMAIL": {
             "TITLE": "E-mail",
