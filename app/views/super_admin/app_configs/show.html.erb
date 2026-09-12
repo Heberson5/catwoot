@@ -1,5 +1,5 @@
 <% content_for(:title) do %>
-  Configurar Ajustes - <%= @config.titleize %>
+  Configurar Ajustes - <%= settings_pages.find { |_key, attrs| attrs['config_key'] == @config }&.last&.dig('name') || @config.titleize %>
 <% end %>
 
 <header class="main-content__header" role="banner">

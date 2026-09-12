@@ -1,7 +1,7 @@
 module Enterprise::SuperAdmin::AppConfigsController
   SHOPIFY_APP_HANDLE_CONFIG = {
-    'display_title' => 'Shopify App Handle',
-    'description' => 'The app handle used in Shopify Admin App Pricing URLs',
+    'display_title' => 'Identificador do App no Shopify',
+    'description' => 'O identificador do app usado nas URLs de preço do Shopify Admin',
     'locked' => false
   }.freeze
 
