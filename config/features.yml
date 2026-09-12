@@ -31,13 +31,13 @@
   chatwoot_internal: true
 - name: ip_lookup
   display_name: Consulta de IP
-  enabled: false
+  enabled: true
 - name: disable_branding
   display_name: Desativar Marca
   enabled: true
 - name: email_continuity_on_api_channel
   display_name: Continuidade de E-mail no Canal de API
-  enabled: false
+  enabled: true
 - name: help_center
   display_name: Central de Ajuda
   enabled: true
@@ -83,7 +83,7 @@
   enabled: true
 - name: report_rollup
   display_name: Consolidação de Relatórios
-  enabled: false
+  enabled: true
 - name: channel_website
   display_name: Canal do Site
   enabled: true
@@ -103,17 +103,17 @@
   enabled: true
 - name: custom_reply_email
   display_name: E-mail de Resposta Personalizado
-  enabled: false
+  enabled: true
 - name: custom_reply_domain
   display_name: Domínio de Resposta Personalizado
-  enabled: false
+  enabled: true
 - name: audit_logs
   display_name: Logs de Auditoria
-  enabled: false
+  enabled: true
   premium: true
 - name: custom_tools
   display_name: Ferramentas Personalizadas
-  enabled: false
+  enabled: true
   premium: true
 - name: message_reply_to
   display_name: Responder Mensagem
@@ -121,14 +121,14 @@
   deprecated: true
 - name: branded_email_templates
   display_name: Modelos de E-mail com Marca
-  enabled: false
+  enabled: true
 - name: inbox_view
   display_name: Visualização de Caixa de Entrada
   enabled: false
   chatwoot_internal: true
 - name: sla
   display_name: SLA
-  enabled: false
+  enabled: true
   premium: true
   help_url: https://chwt.app/hc/sla
 - name: help_center_embedding_search
@@ -138,14 +138,14 @@
   chatwoot_internal: true
 - name: linear_integration
   display_name: Integração com o Linear
-  enabled: false
+  enabled: true
 - name: captain_integration
   display_name: Captain
-  enabled: false
+  enabled: true
   premium: true
 - name: custom_roles
   display_name: Funções Personalizadas
-  enabled: false
+  enabled: true
   premium: true
 - name: chatwoot_v4
   display_name: Chatwoot V4
@@ -157,7 +157,7 @@
   chatwoot_internal: true
 - name: contact_chatwoot_support_team
   display_name: Contatar Equipe de Suporte do Chatwoot
-  enabled: true
+  enabled: false
   chatwoot_internal: true
 - name: shopify_integration
   display_name: Integração com a Shopify
@@ -172,17 +172,17 @@
   enabled: true
 - name: crm_integration
   display_name: Integração com CRM
-  enabled: false
+  enabled: true
 - name: channel_voice
   display_name: Canal de Voz
-  enabled: false
+  enabled: true
   premium: true
 - name: notion_integration
   display_name: Integração com o Notion
-  enabled: false
+  enabled: true
 - name: captain_integration_v2
   display_name: Captain V2
-  enabled: false
+  enabled: true
   premium: true
 - name: whatsapp_embedded_signup
   display_name: Cadastro Integrado do WhatsApp
@@ -190,7 +190,7 @@
   deprecated: true
 - name: whatsapp_campaign
   display_name: Campanha de WhatsApp
-  enabled: false
+  enabled: true
 - name: crm_v2
   display_name: CRM V2
   enabled: false
@@ -200,15 +200,15 @@
   enabled: true
 - name: captain_document_auto_sync
   display_name: Sincronização Automática de Documentos do Captain
-  enabled: false
+  enabled: true
   premium: true
 - name: advanced_search
   display_name: Busca Avançada
-  enabled: false
+  enabled: true
   premium: true
 - name: saml
   display_name: SAML
-  enabled: false
+  enabled: true
   premium: true
 - name: advanced_search_indexing
   display_name: Indexação de Busca Avançada
@@ -227,33 +227,33 @@
   chatwoot_internal: true
 - name: companies
   display_name: Empresas
-  enabled: false
+  enabled: true
   premium: true
 - name: channel_tiktok
   display_name: Canal do TikTok
   enabled: true
 - name: csat_review_notes
   display_name: Notas de Revisão de CSAT
-  enabled: false
+  enabled: true
   premium: true
 - name: captain_tasks
   display_name: Tarefas do Captain
   enabled: true
 - name: conversation_required_attributes
   display_name: Atributos Obrigatórios da Conversa
-  enabled: false
+  enabled: true
   premium: true
 - name: advanced_assignment
   display_name: Atribuição Avançada
-  enabled: false
+  enabled: true
   premium: true
 - name: whatsapp_manual_transfer
   display_name: Transferência Manual do WhatsApp
-  enabled: false
+  enabled: true
   column: feature_flags_ext_1
 - name: data_import
   display_name: Importação de Dados
-  enabled: false
+  enabled: true
   column: feature_flags_ext_1
 - name: api_and_webhooks
   display_name: API e Webhooks
@@ -275,6 +275,6 @@
 - name: audit_log_ip_address
   display_name: Endereço IP no Log de Auditoria
   help_url: https://chwt.app/hc/audit-logs
-  enabled: false
+  enabled: true
   premium: true
   column: feature_flags_ext_1
